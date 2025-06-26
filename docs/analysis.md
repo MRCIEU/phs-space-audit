@@ -20,22 +20,28 @@ be required at Augustine’s Court based on current usage.
 
 There are some limitations with the data.
 
-Door sheets - Quite incomplete. If we analyse all door data it will be
-an underestimate of office usage. If we restrict to only offices with
-data it will be an overestimate. - Incomplete data about types of
-meetings - Some data didn’t record dates etc.
+Door sheets
 
-Walkthroughs - Didn’t record type of activities in the offices
-especially if meeting rooms were used for video calls. - Is a sample
-which may not be representative of the whole day.
+- Quite incomplete. If we analyse all door data it will be an
+  underestimate of office usage. If we restrict to only offices with
+  data it will be an overestimate.
+- Incomplete data about types of meetings
+- Some data didn’t record dates etc.
 
-Planon records - Many people don’t use these data - Bookings were often
-not confirmed, which may indicate that the office was not used or could
-just be because it’s too onerous to confirm a booking.
+Walkthroughs
+
+- Didn’t record type of activities in the offices especially if meeting
+  rooms were used for video calls.
+- Is a sample which may not be representative of the whole day.
+
+Planon records
+
+- Many people don’t use these data
+- Bookings were often not confirmed, which may indicate that the office
+  was not used or could just be because it’s too onerous to confirm a
+  booking.
 
 ## Analysis
-
-### Exploration
 
 Load libraries
 
@@ -1438,9 +1444,3 @@ ggplot(oh_wt_pl, aes(x=value.x, y=value.y)) +
     `geom_smooth()` using formula = 'y ~ x'
 
 ![](analysis_files/figure-commonmark/unnamed-chunk-18-1.png)
-
-``` r
-plot(oh_wt_pl$value.x, oh_wt_pl$value.y, xlab="Walkthroughs", ylab="Planon Bookings", main="Occupancy Ratio vs Planon Bookings")
-```
-
-![](analysis_files/figure-commonmark/unnamed-chunk-18-2.png)
